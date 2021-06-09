@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'main.css'%}">
+</head>
+<body>
+    <h1>Get the Price Prediction Here ! Always Welcome</h1>
+    <img src="{%static '84146PHONE.jpg'%}" alt="">
+    <form action="{%url 'result'%}">
+        {%csrf_token%}
+        <h3>battery_power</h3>
+        <input type="text" name="battery_power" ><br>
+        <h3>blue</h3>
+        <input type="text" name="blue" ><br>
+        <h3>dual_sim</h3>
+        <input type="text" name="dual_sim" ><br>
+        <h3>four_g</h3>
+        <input type="text" name="four_g" ><br>
+        <h3>int_memory</h3>
+        <input type="text" name="int_memory" ><br>
+        <h3>mobile_wt</h3>
+        <input type="text" name="mobile_wt" ><br>
+        <h3>three_g</h3>
+        <input type="text" name="three_g"><br>
+        <h3>touch_screen</h3>
+        <input type="text" name="touch_screen"><br>
+        <h3>wifi</h3>
+        <input type="text" name="wifi" ><br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
