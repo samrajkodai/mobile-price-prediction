@@ -1,0 +1,6 @@
+FROM continuumio/anaconda3:4.4.0
+COPY . /mobileweb/ml_predict
+EXPOSE 5000
+WORKDIR . /mobileweb/ml_predict
+RUN pip install -r requirements.txt
+CMD python Untitled.ipynb
